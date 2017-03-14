@@ -153,8 +153,8 @@
 					</ul>
 			
 					<div class="clearfix"></div>
-					<a class="prev" id="slide_prev" href="#"><img src="images/arrow_left.png" alt="Previous" /></a>
-					<a class="next" id="slide_next" href="#"><img src="images/arrow_right.png" alt="Next" /></a>
+					<a class="prev" id="slide_prev" href="#"><img src="{!! url('images/arrow_left.png') !!}" alt="Previous" /></a>
+					<a class="next" id="slide_next" href="#"><img src="{!! url('images/arrow_right.png') !!}" alt="Next" /></a>
 				</div>
 			</div>
 		</div>
@@ -164,8 +164,8 @@
 @section('footer')
 
 <!-- carouFredSel plugin -->
-<script src="plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed.js"></script>
-<script src="plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script>
+<script src="{!! url('plugins/carouFredSel/jquery.carouFredSel-6.2.0-packed.js') !!}"></script>
+<script src="{!! url('plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js') !!}"></script>
 <!-- Related projects -->
 <script type="text/javascript">
 	jQuery(document).ready(function(){

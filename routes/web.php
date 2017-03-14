@@ -42,9 +42,7 @@ Route::get('/products/{category}', function ($category) {
 });
 
 Route::get('/product/{product?}', function ($product) {
-
     $categories = Category::orderBy('created_at', 'asc')->get();
-
     if(isNonEmptyString($product)) {
         $prod = Product::where('slug',$product)->firstOrFail();
         $prods = Product::where('category_id', $prod->id)->get()->except($prod->id);
@@ -54,8 +52,28 @@ Route::get('/product/{product?}', function ($product) {
             'prods' => $prods,
         ]);
     } else {
-
         return redirect('products');
     }
+});
 
+Route::get('/product/{product?}', function ($product) {
+    $categories = Category::orderBy('created_at', 'asc')->get();
+    if(isNonEmptyString($product)) {
+        $prod = Product::where('slug',$product)->firstOrFail();
+        $prods = Product::where('category_id', $prod->id)->get()->except($prod->id);
+        return view('product', ['title' => $prod->name.' - '.$prod->category->name,
+            'categories' => $categories,
+            'prod' => $prod,
+            'prods' => $prods,
+        ]);
+    } else {
+        return redirect('products');
+    }
+});
+
+Route::get('/contact-us/', function () {
+    $categories = Category::orderBy('created_at', 'asc')->get();
+    return view('contact', ['title' => 'Contact Us',
+        'categories' => $categories
+    ]);
 });

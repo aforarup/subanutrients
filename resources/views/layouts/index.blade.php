@@ -31,7 +31,7 @@
 	<script src="{!! url('/js/vendor/jquery.js') !!}"></script>
 	<script src="{!! url('/js/vendor/custom.modernizr.js') !!}"></script>
 </head>
-<body>
+<body @yield('body-on-load')>
 
 <!-- Begin Main Wrapper -->
 <div class="main-wrapper">
@@ -97,7 +97,7 @@
 							<li><a href="blog-single.html">Blog Inner</a></li>
 						  </ul>
 						</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="{!! url('/contact-us') !!}" @yield('contact')>Contact</a></li>
 					  </ul>
 					  <!-- End Left Nav Section -->					 
 				</section>
@@ -153,11 +153,7 @@
 							<li><i class="icon-phone"></i><span>+399 (500) 321 9548</span></li>
 							<li><i class="icon-envelope"></i><a href="mailto:info@Medico.com">info@Medico.com</a></li>
 						</ul>
-						<ul class="social-icons">
-						<li><a href="#"><i class="icon-pinterest"></i></a></li>
-						<li><a href="#"><i class="icon-twitter"></i></a></li>
-						<li><a href="#"><i class="icon-facebook"></i></a></li>
-					</ul>
+
 					</div>
 				</div>
 					
@@ -201,6 +197,8 @@
 	</div>
 </footer>
 <script src="{!! url('/js/foundation.min.js') !!}"></script>
+<script src="{!! url('js/foundation/foundation.js') !!}"></script>
+<script src="{!! url('js/foundation/foundation.topbar.js') !!}"></script>
 
 <!-- Scripts Initialize -->
 <script type="text/javascript" src="{!! url('/js/app-head-calls.js') !!}"></script>
@@ -212,7 +210,6 @@
 <!-- Smallipop JS - Tooltips -->
 <script type="text/javascript" src="{!! url('/plugins/smallipop/lib/contrib/prettify.js') !!}"></script>
 <script type="text/javascript" src="{!! url('/plugins/smallipop/lib/jquery.smallipop.js') !!}"></script>
-<script type="text/javascript" src="{!! url('/plugins/smallipop/lib/smallipop.calls.js') !!}"></script>
 
 @yield('footer')
 <!-- Initialize JS Plugins -->
