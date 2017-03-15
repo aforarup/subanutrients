@@ -42,7 +42,7 @@
 									<img src="{!! url('images/backgrounds/medicine-placeholder-1.png') !!}" alt="" />
 									{{--<p>Name of the medicine</p>--}}
 									<div class="mask">
-										<p>{{$product->benefits}}</p>
+										{!! $product->benefits!!}
 										{{--<a href="images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">--}}
 											{{--<i class="icon-zoom-in icon-large"></i>--}}
 										{{--</a>--}}

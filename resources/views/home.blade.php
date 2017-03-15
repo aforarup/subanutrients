@@ -7,9 +7,9 @@
 @section('content')
     <div class="slider-wrapper theme-default">
         <div id="slider" class="nivoSlider">
-            <img src="images/demo/slider/chicks.jpg" data-thumb="images/demo/news/1.jpg" alt="" title="#caption1" />
-            <img src="images/demo/slider/cows.jpg" data-thumb="images/demo/news/2.jpg" alt="" title="#caption2"  />
-            <img src="images/demo/slider/horses.jpg" data-thumb="images/demo/news/3.jpg" alt="" title="#caption3" />
+            <img src="{!! url('images/demo/slider/chicks.jpg') !!}" data-thumb="images/demo/news/1.jpg" alt="" title="#caption1" />
+            <img src="{!! url('images/demo/slider/cows.jpg') !!}" data-thumb="images/demo/news/2.jpg" alt="" title="#caption2"  />
+            <img src="{!! url('images/demo/slider/horses.jpg') !!}" data-thumb="images/demo/news/3.jpg" alt="" title="#caption3" />
         </div>
         {{--<div id="caption1" class="nivo-html-caption">--}}
             {{--<p class="nivotitle v1">Medicine definition</p>--}}

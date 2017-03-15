@@ -41,7 +41,7 @@
 						<h3>{{$prod->name}}</h3>
 						
 						<h4>Composition:</h4>
-						<p>{{$prod->composition}}</p>
+						{!! $prod->composition !!}
 					</div>
 				</div>
 			</div>
@@ -49,10 +49,10 @@
 				<div class="widgets">
 
 					<h3>KEY BENEFITS</h3>
-					<p>{{$prod->benefits}}</p>
+					<p>{!! $prod->benefits !!}</p>
 
 					<h3>USAGE</h3>
-					<p>{{$prod->usage}}</p>
+					<p>{!! $prod->usage !!}</p>
 
 					<h3>Presentation</h3>
 					<p>{{$prod->presentation}}</p>

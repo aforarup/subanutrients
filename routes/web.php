@@ -10,8 +10,8 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-use App\Models\Category;
-use App\Models\Product;
+use App\Category;
+use App\Product;
 Route::get('/', function () {
     $categories = Category::orderBy('created_at', 'asc')->get();
     return view('home', ['title' => 'Home', 'categories' => $categories]);
