@@ -18,9 +18,7 @@
 				<div class="divider"><span></span></div>
 				<div class="contact_info">
 					<ul class="about-info garnik">
-						<li><i class="icon-home"></i><span>lorem ipsum street</span></li>
-						<li><i class="icon-phone"></i><span>+399 (500) 321 9548</span></li>
-						<li><i class="icon-envelope"></i><a href="mailto:info@Medico.com">info@Medico.com</a></li>
+						<li><i class="fa fa-envelope"></i>&nbsp;<a href="mailto:info@subanutrients.com">info@subanutrients.com</a></li>
 					</ul>
 				</div>
 			</div>
@@ -28,7 +26,7 @@
 				
 				<h3 class="contact_title">Where to find us</h3>
                 <div class="divider"><span></span></div>
-				<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi 		                   accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Clatss aptent taciti sociosqu ad litora </p>
+				<p>We operate globally from 3 locations - Atlanta (United States of America), Ajman (United Arab Emirates) and Mumbai (India).</p>
 			</div>
 
 			<div class="large-6 columns">
@@ -39,17 +37,37 @@
 						<div class="row">
 							<form method="POST" class="contactForm">
 								<div class="small-4 columns">
-									<input type="text" placeholder="Name" id="contactname" />
+									<input type="text" placeholder="Name*" id="contactname" name="Name" required/>
 								</div>
 								<div class="small-4 columns">
-									<input type="text" placeholder="E-mail" id="contactemail" />
+									<input type="text" placeholder="E-mail*" id="contactemail" name="Email" required/>
 								</div>
 								<div class="small-4 columns">
-									<input type="text" placeholder="Contact" id="contactwebsite" />
+									<input type="text" placeholder="Contact" id="contactwebsite" name="Contact_No"
+										   maxlength="20"/>
+								</div>
+								<div class="small-4 columns">
+									<input type="text" placeholder="City" id="contactwebsite" name="City"
+										   maxlength="30"/>
+								</div>
+								<div class="small-8 columns radio-toolbar">
+									<input type="radio" id="radio1" name="option" value="business" checked>
+									<label for="radio1">General</label>
+
+									<input type="radio" id="radio2" name="option" value="technical">
+									<label for="radio2">Technical</label>
+
+									<input type="radio" id="radio3" name="option" value="general">
+									<label for="radio3">Business</label>
+								</div>
+								<div class="small-12 columns">
+									<input type="text" placeholder="Subject" id="contactwebsite" name="Subject"
+										   maxlength="100"/>
 								</div>
 								<div class="small-12 columns">
 									<textarea cols="10" rows="15" placeholder="Message" id="contactmessage" name="message"></textarea>
 								</div>
+
 								<div class="small-4 columns">
 									<input type="submit" class="button right" value="Send message" name="send" id="send" />
 								</div> 

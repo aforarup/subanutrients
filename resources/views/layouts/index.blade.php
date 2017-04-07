@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="{!! url('/plugins/smallipop/css/contrib/animate.min.css') !!}" type="text/css" media="all" title="Screen" />
 	<link rel="stylesheet" href="{!! url('/plugins/smallipop/css/jquery.smallipop.css') !!}" type="text/css" media="all" title="Screen" />
 
+	<link rel="dns-prefetch" href="https://maps.googleapis.com/" />
 	<!-- Default CSS -->
 	<link rel="stylesheet" href="{!! url('/css/normalize.css') !!}" />
 	<link rel="stylesheet" href="{!! url('/css/foundation.css') !!}" />
@@ -62,42 +63,45 @@
 						  </ul>
 						</li>
 						
-						<li class="has-dropdown"><a href="#">Shortcodes</a>
-						  <ul class="dropdown">
-                          	<li><a href="shortcodes.html">Main elements</a></li>
-							<li><a href="alert-boxes.html">Alert Boxes</a></li>
-							<li><a href="panels.html">Panels</a></li>
-							<li><a href="pricing-tables.html">Pricing Tables</a></li>
-							<li><a href="bars.html">Progress Bars</a></li>
-							<li><a href="tables.html">Tables</a></li>
-							<li><a href="thumbnails.html">Thumbnails</a></li>
-							<li><a href="flex-video.html">Flex Video</a></li>
-							
-						  </ul>
-						</li>                    
-						<li class="has-dropdown"><a href="#">Add-ons</a>
-						  <ul class="dropdown">
-							<li><a href="icons.html">Retina Icons - Font Awesome</a></li>
-						  </ul>
-						</li>
-						<li class="has-dropdown"><a href="#">Portfolio</a>                                       
-						  <ul class="dropdown"> 
-                          		<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>                       
-								<li><a href="portfolio2.html">Portfolio 3 Columns</a></li>
-								<li><a href="portfolio-single.html">Single item</a></li>
-							</ul>
-						</li>
-						<li class="has-dropdown"><a href="#">Blog</a>                    
-						  <ul class="dropdown">
-							<li><a href="blog.html">1 Column, Default</a></li>
-							<li><a href="blogalt.html">1 Column, Alternative</a></li>
-							<li><a href="blog-2column.html">2 Columns</a></li>
-							<li><a href="blog-3column-no-sidebar.html">3 Columns, No sidebar</a></li>
-							<li><a href="blog-4column-no-sidebar.html">4 Columns, No sidebar</a></li>
-							<li><a href="blog-single.html">Blog Inner</a></li>
-						  </ul>
-						</li>
-						<li><a href="{!! url('/contact-us') !!}" @yield('contact')>Contact</a></li>
+						{{--<li class="has-dropdown"><a href="#">Shortcodes</a>--}}
+						  {{--<ul class="dropdown">--}}
+                          	{{--<li><a href="shortcodes.html">Main elements</a></li>--}}
+							{{--<li><a href="alert-boxes.html">Alert Boxes</a></li>--}}
+							{{--<li><a href="panels.html">Panels</a></li>--}}
+							{{--<li><a href="pricing-tables.html">Pricing Tables</a></li>--}}
+							{{--<li><a href="bars.html">Progress Bars</a></li>--}}
+							{{--<li><a href="tables.html">Tables</a></li>--}}
+							{{--<li><a href="thumbnails.html">Thumbnails</a></li>--}}
+							{{--<li><a href="flex-video.html">Flex Video</a></li>--}}
+							{{----}}
+						  {{--</ul>--}}
+						{{--</li>                    --}}
+						{{--<li class="has-dropdown"><a href="#">Add-ons</a>--}}
+						  {{--<ul class="dropdown">--}}
+							{{--<li><a href="icons.html">Retina Icons - Font Awesome</a></li>--}}
+						  {{--</ul>--}}
+						{{--</li>--}}
+						{{--<li class="has-dropdown"><a href="#">Portfolio</a>                                       --}}
+						  {{--<ul class="dropdown"> --}}
+                          		{{--<li><a href="portfolio.html">Portfolio 4 Columns</a> </li>                       --}}
+								{{--<li><a href="portfolio2.html">Portfolio 3 Columns</a></li>--}}
+								{{--<li><a href="portfolio-single.html">Single item</a></li>--}}
+							{{--</ul>--}}
+						{{--</li>--}}
+						{{--<li class="has-dropdown"><a href="#">Blog</a>                    --}}
+						  {{--<ul class="dropdown">--}}
+							{{--<li><a href="blog.html">1 Column, Default</a></li>--}}
+							{{--<li><a href="blogalt.html">1 Column, Alternative</a></li>--}}
+							{{--<li><a href="blog-2column.html">2 Columns</a></li>--}}
+							{{--<li><a href="blog-3column-no-sidebar.html">3 Columns, No sidebar</a></li>--}}
+							{{--<li><a href="blog-4column-no-sidebar.html">4 Columns, No sidebar</a></li>--}}
+							{{--<li><a href="blog-single.html">Blog Inner</a></li>--}}
+						  {{--</ul>--}}
+						{{--</li>--}}
+                          <li><a href="{!! url('/about-us') !!}" @yield('about')>About Us</a></li>
+                          <li><a href="{!! url('/core-strength') !!}" @yield('strength')>Core Strength</a></li>
+                          <li><a href="{!! url('/news') !!}" @yield('news')>News</a></li>
+                          <li><a href="{!! url('/contact-us') !!}" @yield('contact')>Contact</a></li>
 					  </ul>
 					  <!-- End Left Nav Section -->					 
 				</section>
@@ -147,11 +151,9 @@
 					<h4 class="footer-title">Contact info</h4>
 					<div class="divdott"></div>
 					<div class="footer_part_content">
-						<p>Medico Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id </p>
+						<p>We operate globally from 3 locations - Atlanta (United States of America), Ajman (United Arab Emirates) and Mumbai (India).</p>
 						<ul class="about-info">
-							<li><i class="icon-home"></i><span>lorem ipsum street</span></li>
-							<li><i class="icon-phone"></i><span>+399 (500) 321 9548</span></li>
-							<li><i class="icon-envelope"></i><a href="mailto:info@Medico.com">info@Medico.com</a></li>
+							<li><i class="fa fa-envelope"></i>&nbsp;<a href="mailto:info@subanutrients.com">info@subanutrients.com</a></li>
 						</ul>
 
 					</div>

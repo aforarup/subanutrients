@@ -11,7 +11,7 @@
 	<div class="main-wrapper">	
 		<div class="row">
 			<div class="large-6 columns">
-				<h2>{{$prod->name}}</h2>
+				<h2>{{$prod->name}} (for {{$prod->category->name}})</h2>
 			</div>        
 			<div class="large-6 columns">
 				<ul class="breadcrumbs right">
@@ -80,76 +80,7 @@
 				<div class="divider"><span></span></div> 
 				<div class="work_slide">
 					<ul id="work_slide" class="related-projects">
-						<li>
-							<div class="view view-one"> 
-								<img src="images/demo/portfolio/1.jpg" alt="" /> 
-								<div class="mask">
-									<p>Researchers can identify modifications to the chemical structure.</p>
-									<a href="images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-										<i class="icon-zoom-in icon-large"></i>
-									</a>	
-									<a href="portfolio-single.html" class="picon-info">
-										<i class="icon-info icon-large"></i>
-									</a>									
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="view view-one"> 
-								<img src="images/demo/portfolio/2.jpg" alt="" /> 
-								<div class="mask">
-									<p>such people are John Steed, top professional; Avengers.</p>
-									<a href="images/demo/slider/2.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-										<i class="icon-zoom-in icon-large"></i>
-									</a>	
-									<a href="portfolio-single.html" class="picon-info">
-										<i class="icon-info icon-large"></i>
-									</a>									
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="view view-one"> 
-								<img src="images/demo/portfolio/3.jpg" alt="" /> 
-								<div class="mask">
-									<p>Is a selective serotonin reuptake inhibitor.</p>
-									<a href="images/demo/slider/3.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-										<i class="icon-zoom-in icon-large"></i>
-									</a>	
-									<a href="portfolio-single.html" class="picon-info">
-										<i class="icon-info icon-large"></i>
-									</a>									
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="view view-one"> 
-								<img src="images/demo/portfolio/4.jpg" alt="" /> 
-								<div class="mask">
-									<p>The preparation and administration of a medicine, therapeutic regimen.</p>
-									<a href="images/demo/slider/3.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-										<i class="icon-zoom-in icon-large"></i>
-									</a>	
-									<a href="portfolio-single.html" class="picon-info">
-										<i class="icon-info icon-large"></i>
-									</a>									
-								</div>
-							</div>
-						</li>
-						<li>
-							<div class="view view-one"> 
-								<img src="images/demo/portfolio/5.jpg" alt="" /> 
-								<div class="mask">
-									<p>Researchers can identify modifications to the chemical structure.</p>
-									<a href="images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">
-										<i class="icon-zoom-in icon-large"></i>
-									</a>	
-									<a href="portfolio-single.html" class="picon-info">
-										<i class="icon-info icon-large"></i>
-									</a>									
-								</div>
-							</div>
-						</li>
+						@each('partials.productview', $products, 'product')
 					</ul>
 			
 					<div class="clearfix"></div>

@@ -28,7 +28,7 @@
                     <div class="large-3 columns red">
                         <p class="appointment-block-decorated">Say Hello!</p>
                         <p class="appointment-block-small">We would love to listen from you. Drop a line!</p>
-                        &nbsp;<!-- Put appointemnt label here -->
+                        &nbsp;<!-- Put appointment label here -->
                     </div>
                     <div class="large-9 columns">
                         <form method="POST" action="#" id="appointment-contact-form">
@@ -69,7 +69,7 @@
                         manufacturing & marketing of nutraceuticals and animal health products. Our objective is to
                         make our customers’ business more sustainable and profitable.
                         Building on many years of experience, we deliver quality products and services.
-                        <a href="{!! url('/about') !!}">Read More »</a></p>
+                        <a href="{!! url('/about-us') !!}">Read More »</a></p>
                 </div>
             </div>
             <div class="large-4 columns service-block">
@@ -186,7 +186,7 @@
         <div class="row">
             <div class="large-12 columns">
                 <div class="title-block">
-                    <h5>Slideshow</h5>
+                    <h5>Customers</h5>
                     <div class="divider"><span></span></div>
                     <div class="clearfix"></div>
                 </div>

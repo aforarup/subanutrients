@@ -45,26 +45,11 @@ Route::get('/product/{product?}', function ($product) {
     $categories = Category::orderBy('created_at', 'asc')->get();
     if(isNonEmptyString($product)) {
         $prod = Product::where('slug',$product)->firstOrFail();
-        $prods = Product::where('category_id', $prod->id)->get()->except($prod->id);
+        $prods = Product::where('category_id', $prod->category->id)->get()->except($prod->id);
         return view('product', ['title' => $prod->name.' - '.$prod->category->name,
             'categories' => $categories,
             'prod' => $prod,
-            'prods' => $prods,
-        ]);
-    } else {
-        return redirect('products');
-    }
-});
-
-Route::get('/product/{product?}', function ($product) {
-    $categories = Category::orderBy('created_at', 'asc')->get();
-    if(isNonEmptyString($product)) {
-        $prod = Product::where('slug',$product)->firstOrFail();
-        $prods = Product::where('category_id', $prod->id)->get()->except($prod->id);
-        return view('product', ['title' => $prod->name.' - '.$prod->category->name,
-            'categories' => $categories,
-            'prod' => $prod,
-            'prods' => $prods,
+            'products' => $prods,
         ]);
     } else {
         return redirect('products');
@@ -75,5 +60,23 @@ Route::get('/contact-us/', function () {
     $categories = Category::orderBy('created_at', 'asc')->get();
     return view('contact', ['title' => 'Contact Us',
         'categories' => $categories
+    ]);
+});
+
+Route::get('/about-us/', function () {
+    $categories = Category::orderBy('created_at', 'asc')->get();
+    $products = Product::orderBy('name', 'asc')->get();
+    return view('about', ['title' => 'About Us',
+        'categories' => $categories,
+        'products' => $products,
+    ]);
+});
+
+Route::get('/core-strength/', function () {
+    $categories = Category::orderBy('created_at', 'asc')->get();
+    $products = Product::orderBy('name', 'asc')->get();
+    return view('corestrength', ['title' => 'Core Strength',
+        'categories' => $categories,
+        'products' => $products,
     ]);
 });
