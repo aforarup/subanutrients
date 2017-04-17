@@ -76,7 +76,7 @@ class CategoryObserver
     public function saving(Category $Category)
     {
         //code...
-        $Category->setAttribute('slug', toAscii($Category->getAttributeValue('name')));
+        $Category->setAttribute('slug', $this->toAscii($Category->getAttributeValue('name')));
 
 
     }
