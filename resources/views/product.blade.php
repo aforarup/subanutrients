@@ -28,13 +28,6 @@
 <div class="main-wrapper">
 	<div class="content_wrapper">
 		<div class="row">
-			{{--<div class="large-8 columns">--}}
-				{{--<article >--}}
-					{{--<div class="post_img">--}}
-						{{--<img class="post_image" src="{!! url('images/backgrounds/medicine-placeholder-4.jpg') !!}" alt="{{$prod->name}}">--}}
-					{{--</div>--}}
-				{{--</article>--}}
-			{{--</div>--}}
 			<div class="large-4 columns">
 				<div class="widgets">
 					<div class="panel">
@@ -61,16 +54,7 @@
 				</div>
 			</aside>
 		</div>
-		
-		{{--<div class="row">--}}
-			{{--<div class="large-12 columns">--}}
-				{{--<article >--}}
-					{{--<div class="post_img">--}}
-						{{--<img class="post_image" src="{!! url('images/backgrounds/medicine-placeholder-5.jpg') !!}" alt="{{$prod->name}}">--}}
-					{{--</div>--}}
-				{{--</article>--}}
-			{{--</div>--}}
-		{{--</div>--}}
+
 		<div class="row">
 			<div class="large-12 columns">	
 				<div class="title-block">					

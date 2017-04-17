@@ -568,7 +568,7 @@ a.button.shadow-button{margin-bottom:0}
 
 /* --- Logo slider -- */
 .partners-block{margin-bottom:20px}
-#logo_slide li {width:189px !Important; float:left; padding:20px 0px; border-right:solid 1px #eee; text-align:center; }
+#logo_slide li {width:240px !Important; float:left; padding:20px 0px; border-right:solid 1px #eee; text-align:center; }
 #logo_slide{border:solid 1px #eee; list-style:none}
 #logo_slide li:last-child{border:none}
 #slide_prev2, #slide_next2{top:0px !Important}

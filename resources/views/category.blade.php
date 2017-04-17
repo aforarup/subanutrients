@@ -37,29 +37,6 @@
 					<ul class="portfolio-content large-block-grid-4">
 
 						@each('partials.productview', $products, 'product')
-						{{--@foreach($products as $key=>$product)--}}
-							{{--<li data-id="{{++$key}}" data-type="{{$product->category->slug}}">--}}
-								{{--<div class="view view-one">--}}
-									{{--<img src="{!! url('images/backgrounds/medicine-placeholder-1.png') !!}" alt="" />--}}
-									{{--<p>Name of the medicine</p>--}}
-									{{--<div class="mask">--}}
-										{{--{!! $product->benefits!!}--}}
-										{{--<a href="images/demo/slider/1.jpg" class="picon-zoom" rel="prettyPhoto" title="John Steed, top professional">--}}
-											{{--<i class="icon-zoom-in icon-large"></i>--}}
-										{{--</a>--}}
-										{{--<a href="portfolio-single.html" class="picon-info">--}}
-											{{--<i class="fa fa-info"></i>--}}
-										{{--</a>--}}
-									{{--</div>--}}
-								{{--</div>--}}
-								{{--<a href="{!! url('/product/'.$product->slug) !!}">--}}
-								{{--<div class="project-info">--}}
-									{{--<h3>{{$product->name}}</h3>--}}
-									{{--<p>{{$product->presentation}}</p>--}}
-								{{--</div>--}}
-								{{--</a>--}}
-							{{--</li>--}}
-						{{--@endforeach--}}
 					</ul>
 				</div>
 				<div class="large-12 columns">
